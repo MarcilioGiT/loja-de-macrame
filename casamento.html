@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casamentos | NosDaNih</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header-bg">
+    <div class="header-container">
+        <div class="logo-box">
+          <span class="logo-text">NosDaNih</span>
+          <img src="https://ext.same-assets.com/2292570714/127540084.png" class="logo-art" alt="Arte macramê">
+        </div>
+      </a>
+      <div class="header-title-area">
+        <span class="byline">By Nirlanda</span>
+        <span class="whatsapp">Fale pelo WhatsApp</span>
+      </div>
+      <div class="header-icons">
+        <a href="https://api.whatsapp.com/send/?phone=5585985544951" aria-label="Contato"><span>Entre em Contato</span></a>
+        <a href="https://api.whatsapp.com/send/?phone=5585985544951" aria-label="whatsapp"><img src="./whatsapp.png.png" height="24"/></a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Loja</a>
+      <a href="casamento.html" class="active">Casamentos</a>
+      <a href="luminarias.html">Luminárias</a>
+      <a href="cortinas.html">Cortinas</a>
+      <a href="paineis.html">Painéis</a>
+      <a href="suportes-de-plantas.html">Suportes de Plantas</a>
+      <a href="diversos.html">Diversos</a>
+      <div class="mais-dropdown">
+        <a href="#" class="mais-btn">Mais ▾</a>
+        <div class="mais-menu">
+          <a href="sobre.html">Sobre</a>
+        </div>
+      </div>
+      <a href="cart.html">Carrinho</a>
+    </nav>
+  </header>
+  <main class="produtos-bg">
+    <h1 class="cat-title">Produtos para Casamentos</h1>
+    <section class="produtos-lista">
+      <div class="produto-card" data-nome="Painel Caíque" data-img="https://ext.same-assets.com/2292570714/2710370660.jpeg" data-preco="359">
+        <img src="https://ext.same-assets.com/2292570714/2710370660.jpeg" alt="Painel Caíque">
+        <h3>Painel Caíque</h3>
+        <span>R$359,00</span>
+        <button class="btn-opcoes">Opções</button>
+      </div>
+      <!-- Adicione outros produtos de casamento aqui -->
+    </section>
+    <!-- Modal de opções do produto (igual home) -->
+    <div class="modal-bg" id="modal-bg">
+      <div class="modal-produto" id="modal-produto">
+        <button id="fechar-modal" class="fechar-modal">&times;</button>
+        <img id="modal-img" src="" alt="" class="modal-img">
+        <h3 id="modal-nome"></h3>
+        <span id="modal-preco"></span>
+        <div class="modal-qtd-area">
+          <label for="modal-qtd">Quantidade:</label>
+          <button id="modal-menor" class="qtd-btn">-</button>
+          <input id="modal-qtd" type="number" min="1" value="1">
+          <button id="modal-maior" class="qtd-btn">+</button>
+        </div>
+        <button id="modal-adicionar" class="modal-adicionar">Adicionar ao Carrinho</button>
+        <div id="modal-feedback" class="modal-feedback"></div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer-bg">
+    <div class="footer-creditos">Créditos do site para Marcílio GiT Dev</div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

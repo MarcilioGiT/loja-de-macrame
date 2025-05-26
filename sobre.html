@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre | NosDaNih</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .logo-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 24px;
+    }
+    .logo-text {
+      font-family: 'Raleway', 'Montserrat', Arial, sans-serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #5a4f45;
+      text-shadow: 0 2px 8px #3f3936, 0 1px 0 #5c4e3e;
+      margin-bottom: 0.2em;
+      line-height: 1;
+      background: linear-gradient(90deg, #5c544c 0%, #70685e 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-decoration: none;
+    }
+    .logo-art {
+      display: block;
+      width: 48px;
+      height: auto;
+      margin-top: 0.1em;
+      filter: grayscale(0.2) brightness(1.1) contrast(1.1);
+    }
+    @media (max-width: 600px) {
+      .logo-text {
+        font-size: 1.3rem;
+      }
+      .logo-art {
+        width: 32px;
+      }
+    }
+    .icon-cart {
+      vertical-align: middle;
+      margin-right: 0.4em;
+      display: inline-block;
+      transition: stroke 0.2s;
+    }
+    .main-nav a[href*="cart"] {
+      font-weight: 600;
+      color: #7c5c3e;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3em;
+    }
+    .main-nav a[href*="cart"]:hover .icon-cart {
+      stroke: #bfa77a;
+    }
+    .cart-badge {
+      display: inline-block;
+      min-width: 18px;
+      height: 18px;
+      padding: 0 5px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #fff;
+      background: #bfa77a;
+      border-radius: 9px;
+      text-align: center;
+      line-height: 18px;
+      margin-left: -8px;
+      margin-right: 4px;
+      vertical-align: top;
+      box-shadow: 0 1px 4px #e2cdb0;
+      transition: background 0.2s;
+    }
+    .main-nav a[href*="cart"]:hover .cart-badge {
+      background: #7c5c3e;
+    }
+    .sobre-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .sobre-hero {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .sobre-hero h1 {
+      font-size: 2.5rem;
+      color: #7c5c3e;
+      margin-bottom: 1rem;
+    }
+    .sobre-hero p {
+      font-size: 1.2rem;
+      color: #666;
+      line-height: 1.6;
+    }
+    .sobre-section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .sobre-section h2 {
+      color: #7c5c3e;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+    .sobre-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+    .destaque {
+      background: #f5e9d6;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid #bfa77a;
+      margin: 1.5rem 0;
+    }
+    .destaque p {
+      color: #7c5c3e;
+      font-weight: 500;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header class="header-bg">
+    <div class="header-container">
+      <a href="index.html">
+        <div class="logo-box">
+          <span class="logo-text">NosDaNih</span>
+          <img src="https://ext.same-assets.com/2292570714/127540084.png" class="logo-art" alt="Arte macramê">
+        </div>
+      </a>
+      <div class="header-title-area">
+        <span class="byline">By Nirlanda</span>
+        <span class="whatsapp">Fale pelo WhatsApp</span>
+      </div>
+      <div class="header-icons">
+        <a href="https://api.whatsapp.com/send/?phone=5585985544951" aria-label="Contato"><span>Entre em Contato</span></a>
+        <a href="https://api.whatsapp.com/send/?phone=5585985544951" aria-label="whatsapp"><img src="./whatsapp.png.png" height="24"/></a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Loja</a>
+      <a href="casamento.html">Casamentos</a>
+      <a href="luminarias.html">Luminárias</a>
+      <a href="cortinas.html">Cortinas</a>
+      <a href="paineis.html">Painéis</a>
+      <a href="suportes-de-plantas.html">Suportes de Plantas</a>
+      <a href="diversos.html">Diversos</a>
+      <div class="mais-dropdown">
+        <a href="#" class="mais-btn">Mais ▾</a>
+        <div class="mais-menu">
+          <a href="sobre.html" class="active">Sobre</a>
+        </div>
+      </div>
+      <a href="cart.html"><svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="#7c5c3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h2l2.36 12.24a2 2 0 0 0 2 1.76h9.68a2 2 0 0 0 2-1.76L23 6H6"></path></svg><span class="cart-badge">0</span> Carrinho</a>
+    </nav>
+  </header>
+  <main class="sobre-content">
+    <div class="sobre-hero">
+      <h1>Sobre a NosDaNih</h1>
+      <p>Artesanato em macramê feito com amor e dedicação por Juliana Mendes</p>
+    </div>
+
+    <div class="sobre-section">
+      <h2>Nossa História</h2>
+      <p>Olá! Me chamo Nirlanda e sou a artesã responsável por todas as peças da NosDaNih.</p>
+      <p>Por aqui não temos produção em massa, tudo é feito com a calma que o trabalho artesanal merece, peça por peça. Cada nó é feito com carinho e atenção aos detalhes, resultando em produtos únicos e especiais.</p>
+      <div class="destaque">
+        <p>"Espero ganhar seu coração com a minha arte e trazer mais beleza e aconchego para o seu lar."</p>
+      </div>
+    </div>
+
+    <div class="sobre-section">
+      <h2>O que é Macramê?</h2>
+      <p>O macramê é uma técnica milenar de tecelagem que utiliza apenas nós para criar peças decorativas e funcionais. É uma arte que combina tradição com modernidade, criando produtos sustentáveis e duráveis.</p>
+      <p>Na NosDaNih, utilizamos cordas de alta qualidade e técnicas tradicionais para criar peças que duram por muitos anos, mantendo sua beleza e funcionalidade.</p>
+    </div>
+
+    <div class="sobre-section">
+      <h2>Nossos Valores</h2>
+      <p><strong>Artesanato Autêntico:</strong> Cada peça é única, feita à mão com técnicas tradicionais.</p>
+      <p><strong>Qualidade Superior:</strong> Utilizamos apenas materiais de primeira qualidade para garantir durabilidade.</p>
+      <p><strong>Sustentabilidade:</strong> Produtos duráveis que respeitam o meio ambiente.</p>
+      <p><strong>Personalização:</strong> Podemos adaptar cores e tamanhos conforme sua necessidade.</p>
+    </div>
+
+    <div class="sobre-section">
+      <h2>Produtos Disponíveis</h2>
+      <p>Nossa linha inclui:</p>
+      <ul style="margin-left: 2rem; color: #666;">
+        <li>Suportes para plantas (plant hangers)</li>
+        <li>Painéis decorativos para parede</li>
+        <li>Luminárias artesanais</li>
+        <li>Cortinas e divisórias</li>
+        <li>Produtos para casamentos e eventos</li>
+        <li>Acessórios diversos para casa</li>
+      </ul>
+    </div>
+  </main>
+  <footer class="footer-bg">
+    <div class="footer-creditos">Créditos do site para Marcílio GiT Dev</div>
+    <div class="footer-social">
+      <a href="https://instagram.com/_marciliox" target="_blank" rel="noopener">
+        <img src="https://ext.same-assets.com/2292570714/462745726.png" alt="Instagram" height="24"/>
+      </a>
+    </div>
+  </footer>
+  <script src="js/cart.js"></script>
+</body>
+</html>
